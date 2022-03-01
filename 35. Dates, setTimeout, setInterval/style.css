@@ -1,0 +1,23 @@
+body{
+    background-color: aqua;
+}
+
+.container{
+    background-color: rgb(123, 199, 174);
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2{
+    background-color: beige;
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.time{
+    font-size: 30px;
+}
