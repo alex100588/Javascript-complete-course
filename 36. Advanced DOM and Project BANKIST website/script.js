@@ -61,3 +61,18 @@ header.after(message)
 
 //Delete elements
 document.querySelector('.btn--close-cookie').addEventListener('click',()=> message.remove())
+
+///Styles
+message.style.backgroundColor = 'blue'
+message.style.width = '120%'
+
+console.log(message.style.color); 
+console.log(message.style.backgroundColor); 
+console.log(getComputedStyle(message).color);
+console.log(getComputedStyle(message).height);
+
+message.style.height =Number.parseFloat(getComputedStyle(message).height, 10) + 30 + 'px'
+console.log(getComputedStyle(message).height);
+
+document.documentElement.style.setProperty('--color-primary', 'orangered')
+
