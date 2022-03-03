@@ -88,3 +88,12 @@ console.log(logo.getAttribute('name'));
 logo.setAttribute('company', 'Bankist')
 console.log(logo.getAttribute('src'));
 
+
+//Implementing smooth scrool
+
+const btnScrollTo = document.querySelector('.btn--scroll-to')
+const section1 = document.querySelector('#section--1')
+
+btnScrollTo.addEventListener('click', function(){
+  section1.scrollIntoView({behavior: 'smooth'})
+})
