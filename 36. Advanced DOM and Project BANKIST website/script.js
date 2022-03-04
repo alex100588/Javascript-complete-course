@@ -97,3 +97,13 @@ const section1 = document.querySelector('#section--1')
 btnScrollTo.addEventListener('click', function(){
   section1.scrollIntoView({behavior: 'smooth'})
 })
+
+//Event handlers
+
+const alertH1 = function(){
+  console.log('great')
+}
+
+const h1 =document.querySelector('h1')
+h1.addEventListener('mouseenter', alertH1 )
+
