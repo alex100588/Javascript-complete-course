@@ -106,4 +106,6 @@ const alertH1 = function(){
 
 const h1 =document.querySelector('h1')
 h1.addEventListener('mouseenter', alertH1 )
-
+setTimeout(() => {
+  h1.removeEventListener('mouseenter',alertH1 )
+}, 2000);
