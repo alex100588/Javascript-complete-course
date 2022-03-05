@@ -127,3 +127,14 @@ setTimeout(() => {
 // document.querySelector('.nav').addEventListener('click', function(e){
 //   this.style.backgroundColor = randomColor()
 // })
+
+
+////Page navigation
+
+// document.querySelectorAll('.nav__link').forEach(function(el){
+//   el.addEventListener('click', function(e){
+//     e.preventDefault()
+//     const id = this.getAttribute('href')
+//     document.querySelector(id).scrollIntoView({behavior: 'smooth'})
+//   })
+// })
