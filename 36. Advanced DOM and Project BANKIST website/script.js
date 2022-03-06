@@ -149,3 +149,15 @@ document.querySelector('.nav__links').addEventListener('click', function(e){
     id.scrollIntoView({behavior: 'smooth'})
   }
 })
+
+/// Dom traversing
+
+const h11 = document.querySelector('h1')
+
+console.log(h11.querySelectorAll('.highlight'));
+console.log(h11.childNodes);
+console.log(h11.children)
+console.log(h11.firstElementChild)
+h11.firstElementChild.style.color = 'white'
+console.log(h11.lastElementChild)
+h11.lastElementChild.style.color = 'orangered'
