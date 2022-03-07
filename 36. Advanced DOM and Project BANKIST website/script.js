@@ -168,3 +168,9 @@ console.log(h11.parentNode);
 
 console.log(h11.nextElementSibling);
 console.log(h11.previousElementSibling);
+console.log(h11.previousSibling);
+console.log(h11.nextSibling);
+console.log(h11.parentElement.children);
+
+//[...h11.parentElement.children].forEach(el=> el.style.color = 'red')
+//Array.from(h11.parentElement.children).forEach(el=> el.style.color = 'red')
