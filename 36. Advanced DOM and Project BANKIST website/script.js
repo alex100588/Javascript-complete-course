@@ -161,3 +161,10 @@ console.log(h11.firstElementChild)
 h11.firstElementChild.style.color = 'white'
 console.log(h11.lastElementChild)
 h11.lastElementChild.style.color = 'orangered'
+console.log(h11.parentElement);
+console.log(h11.parentNode);
+
+//h11.closest('.header').style.backgroundColor = 'green'
+
+console.log(h11.nextElementSibling);
+console.log(h11.previousElementSibling);
