@@ -41,3 +41,12 @@ console.log(jack.species);
 
 console.log(alex.hasOwnProperty('firstName'));
 console.log(alex.hasOwnProperty('calc'));
+
+
+Person.prototype.unique = function(arr){
+    return [...new Set(arr)].join(' ')
+}
+
+console.log(alex.unique([2,3,4,4,2,2]));
+
+
