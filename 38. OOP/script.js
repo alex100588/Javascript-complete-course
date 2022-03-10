@@ -119,3 +119,28 @@ const jessica = new PersonCL('Jessica', 1996)
 console.log(jessica);
 console.log(jessica.calcAge(1996));
 
+///// Setters and getters
+
+const account = {
+    owner: 'Alex',
+    movements: [200, 530, 120, 300],
+
+    get latest(){
+        return this.movements.slice(-1).pop()
+    },
+    
+    set latest(mov){
+        this.movements.push(mov)
+    },
+
+    get age(){
+        return 2037 - 2020
+    }
+}
+
+console.log(account.latest);
+account.latest = 30
+account.latest = 22
+console.log(account.movements);
+
+console.log(account.age);
