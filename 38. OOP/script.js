@@ -114,3 +114,8 @@ class PersonCL{
         return 2022- this.birthYear
     }
 }
+
+const jessica = new PersonCL('Jessica', 1996)
+console.log(jessica);
+console.log(jessica.calcAge(1996));
+
