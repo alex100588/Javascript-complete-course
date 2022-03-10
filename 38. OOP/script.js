@@ -101,3 +101,16 @@ console.log(mercedes.decelerate());
 console.log(mercedes.accelerate());
 console.log(mercedes.decelerate());
 
+
+////////// ES6 Classes
+
+class PersonCL{
+    constructor(firstName, birthYear){
+        this.firstName = firstName
+        this.birthYear = birthYear
+    }
+
+    calcAge(){
+        return 2022- this.birthYear
+    }
+}
