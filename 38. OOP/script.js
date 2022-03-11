@@ -144,3 +144,25 @@ account.latest = 22
 console.log(account.movements);
 
 console.log(account.age);
+
+
+/// Set property that already exists as setter
+class Person2{
+    constructor(fullName, birthYear){
+        this.fullName = fullName
+        this.birthYear = birthYear
+    }
+
+    set fullName(name){
+        if(name.includes(' ')) this._fullName = name
+        else alert(`${name} is not full name`)
+    }
+
+    get fullName(){
+        return this._fullName
+    }
+}
+
+const alina = new Person2('anca dave', 2018)
+console.log(alina);
+console.log(alina.fullName);
