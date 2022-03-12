@@ -227,3 +227,46 @@ car1.accelerate()
 console.log(car1.speedUS);
 car1.speedUS = 60
 console.log(car1);
+
+
+///////Inheritance between classes
+
+const Person3 = function(firstName, birthYear){
+    this.firstName = firstName
+    this.birthYear = birthYear
+}
+
+Person3.prototype.calcAge2 = function(){
+    return  this.birthYear - 2044
+}
+
+const Student = function(firstName, birthYear, course){
+    Person3.call(this,firstName, birthYear)
+    this.course = course
+}
+
+Student.prototype.introduce = function(){
+    console.log(`My name is ${this.firstName} and I study ${this.course}`);
+}
+
+const Student2 = function(grades, firstName, birthYear){
+    Person3.call(this, firstName, birthYear)
+    this.grades = grades
+}
+
+const Student3 = function(course2,firstName, grades, birthYear){
+    this.course2 = course2
+    Student2.call(this,firstName, grades, birthYear)
+    console.log(`My name is ${this.firstName},I am born in ${this.birthYear} my grade on ${this.course2} course is ${this.grades}`);
+}
+
+const mike = new Student('Mike', 2020, 'Computer Science')
+
+console.log(mike);
+console.log(mike.introduce());
+
+const anca = new Student2(10, 'anca', 2012)
+console.log(anca);
+
+const adina = new Student3('Math', '10', 'Adina', 2010)
+console.log(adina);
