@@ -166,3 +166,20 @@ class Person2{
 const alina = new Person2('anca dave', 2018)
 console.log(alina);
 console.log(alina.fullName);
+
+
+////Object .create
+
+const PersonProto = {
+    calcAge(year){
+        console.log(2037 - year);
+    }
+}
+
+const steven = Object.create(PersonProto)
+console.log(steven);
+steven.name = 'steve'
+steven.age = 22
+steven.calcAge(2022)
+console.log(steven);
+
