@@ -254,7 +254,7 @@ const Student2 = function(grades, firstName, birthYear){
     this.grades = grades
 }
 
-const Student3 = function(course2,firstName, grades, birthYear){
+const Student3 = function(course2, firstName, grades, birthYear){
     this.course2 = course2
     Student2.call(this,firstName, grades, birthYear)
     console.log(`My name is ${this.firstName},I am born in ${this.birthYear} my grade on ${this.course2} course is ${this.grades}`);
