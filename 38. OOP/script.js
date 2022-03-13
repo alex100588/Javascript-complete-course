@@ -283,3 +283,19 @@ DATA CAR 1: 'Tesla' going at 120 km/h, with a charge of 23%
 
 GOOD LUCK 😀
 */
+
+const Car = function(make, speed){
+    this.make = make
+    this.speed = speed
+
+}
+
+Car.prototype.accelerate = function(){
+    this.speed +=10
+    return `${this.make} is going with ${this.speed}`
+}
+
+Car.prototype.decelerate = function(){
+    this.speed -=10
+    return `${this.make} is going with ${this.speed} km/h`
+}
