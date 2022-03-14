@@ -367,3 +367,24 @@ class PersonCl {
 
   const alex = new PersonCl("Ionasc Alex", 1990)
   console.log(alex);
+
+ class Student extends PersonCl{
+      constructor(fullName, birthYear, course){
+        super(fullName, birthYear)
+        this.course = course
+      }
+
+      introduce(){
+          return `My name is ${this.fullName}, I am born in ${this.birthYear} and I study ${this.course}`
+      }
+  }
+
+  const anca = new Student('Anca Gos', 1990, 'Computer Science')
+  const andrei = new Student('Andrei Nedea', 1999, 'Math')
+
+  console.log(andrei);
+  console.log(anca);
+  console.log(andrei.introduce());
+  console.log(anca.introduce());
+  console.log(anca.calcAge());
+  console.log(andrei.calcAge());
