@@ -212,3 +212,16 @@ const handleOver = function(e, opacity){
     })
   }
 }
+
+
+nav.addEventListener('mouseover', function(e){
+  handleOver(e, 0.5)
+})
+
+nav.addEventListener('mouseout', function(e){
+  handleOver(e, 1)
+})
+
+const initialCoords = section1.getBoundingClientRect()
+console.log(initialCoords);
+
