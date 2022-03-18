@@ -245,3 +245,6 @@ const btnRight = document.querySelector('.slider__btn--right')
 
 let currentSlide = 0
 const maxSlide = slides.length
+const goToSlide = function(slidee){
+  slides.forEach((slide, idx) => slide.style.transform = `translateX(${100 * (idx - slidee)}%)`)
+}
