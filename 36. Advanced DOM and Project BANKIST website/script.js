@@ -260,3 +260,17 @@ const nextSlide = function(){
 
   goToSlide(currentSlide)
 }
+const prevSlide = function(){
+  if(currentSlide === 0){
+    currentSlide = maxSlide -1
+  }else{
+    currentSlide--
+  }
+  
+  goToSlide(currentSlide)
+  
+}
+
+btnRight.addEventListener('click', nextSlide)
+btnLeft.addEventListener('click', prevSlide)
+
