@@ -248,3 +248,15 @@ const maxSlide = slides.length
 const goToSlide = function(slidee){
   slides.forEach((slide, idx) => slide.style.transform = `translateX(${100 * (idx - slidee)}%)`)
 }
+
+goToSlide(0)
+  
+const nextSlide = function(){
+  if(currentSlide === maxSlide -1){
+    currentSlide = 0
+  }else{
+    currentSlide++
+  }
+
+  goToSlide(currentSlide)
+}
