@@ -235,3 +235,13 @@ window.addEventListener('scroll', function(e){
 
   window.scrollY > initialCoords.top ? nav.classList.add('sticky') : nav.classList.remove('sticky')
 })
+
+////// Building the Slider
+
+const slides = document.querySelectorAll('.slide')
+const btnLeft = document.querySelector('.slider__btn--left')
+const btnRight = document.querySelector('.slider__btn--right')
+
+
+let currentSlide = 0
+const maxSlide = slides.length
