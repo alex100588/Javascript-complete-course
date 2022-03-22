@@ -120,3 +120,9 @@ class App {
       this._renderWorkoutMarker(work);
     });
   }
+  
+  _showForm(mapE) {
+    this.#mapEvent = mapE;
+    form.classList.remove('hidden');
+    inputDistance.focus();
+  }
