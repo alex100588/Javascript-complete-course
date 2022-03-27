@@ -267,3 +267,8 @@ class App {
           </div>
         </li>
         `;
+    
+    form.insertAdjacentHTML('afterend', html);
+    }
+
+    _moveToPopup(e) {
