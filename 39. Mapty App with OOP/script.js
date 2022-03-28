@@ -272,3 +272,13 @@ class App {
     }
 
     _moveToPopup(e) {
+
+     if (!this.#map) return;
+
+    const workoutEl = e.target.closest('.workout');
+
+    if (!workoutEl) return;
+
+    const workout = this.#workouts.find(
+      work => work.id === workoutEl.dataset.id
+    );
